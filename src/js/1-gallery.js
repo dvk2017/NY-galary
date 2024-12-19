@@ -21,6 +21,9 @@ const marcupGallery = document.querySelector('.gallery');
 marcupGallery.insertAdjacentHTML('beforeend', marcup);
 
 new SimpleLightbox('.gallery .gallery-link', {
+  captions: true,
+  // captionSelector: 'self',
+  captionType: 'html',
   captionsData: 'alt',
   captionDelay: 250,
   /* options */

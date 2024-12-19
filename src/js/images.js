@@ -2,7 +2,7 @@ export default [
   {
     preview: '../img/arcad/img-1_400.jpg',
     original: '../img/arcad/img-1.jpg',
-    description: 'Hokkaido Flower',
+    description: '<input type="text" placeholder="Enter text here">',
   },
   {
     preview: '../img/arcad/img-2_400.jpg',
