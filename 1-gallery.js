@@ -8,8 +8,8 @@ import"./assets/modulepreload-polyfill-B5Qt9EMX.js";import{S as p}from"./assets/
       alt="${o}"
     />
   </a>
-    <label for="${n}"></label>${o}:</label>
+    <label for="${n}">${o}:</label>
   <input type="number" id="${n}" name="quantity">
  </li>
-        `,""),c=document.querySelector(".gallery");c.insertAdjacentHTML("beforeend",l);new p(".gallery .gallery-link",{captions:!0,captionType:"html",captionsData:"alt",captionDelay:250});let a={};const s=document.querySelector(".feedback-form");localStorage.getItem("answers-state")&&(a=JSON.parse(localStorage.getItem("answers-state")));for(const[t,e]of Object.entries(a))document.querySelector(`#${t}`).value=e;s.addEventListener("input",g);s.addEventListener("submit",d);function g(t){a[t.target.id]=t.target.value.trim(),localStorage.setItem("answers-state",JSON.stringify(a))}function d(t){if(t.preventDefault(),Object.keys(a).length!==9){alert("Fill please all fields");return}let e=0;Object.values(a).forEach(i=>{e+=Number(i)}),b.textContent=e}const b=document.querySelector("#total-rez");
+        `,""),c=document.querySelector(".gallery");c.insertAdjacentHTML("beforeend",l);new p(".gallery .gallery-link",{captions:!0,captionType:"html",captionsData:"alt",captionDelay:250});let a={};const s=document.querySelector(".feedback-form");localStorage.getItem("answers-state")&&(a=JSON.parse(localStorage.getItem("answers-state")));for(const[t,e]of Object.entries(a))document.querySelector(`#${t}`).value=e;s.addEventListener("input",g);s.addEventListener("submit",d);function g(t){a[t.target.id]=t.target.value.trim(),localStorage.setItem("answers-state",JSON.stringify(a))}function d(t){if(t.preventDefault(),Object.keys(a).length!==9){alert("Fill please all fields");return}let e=0;Object.values(a).forEach(i=>{e+=Number(i)}),m.textContent=e}const m=document.querySelector("#total-rez");
 //# sourceMappingURL=1-gallery.js.map
