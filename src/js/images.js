@@ -1,32 +1,42 @@
 export default [
   {
-    preview: '../img/arcad/img-1_400.jpg',
-    original: '../img/arcad/img-1.jpg',
+    preview:
+      'https://raw.githubusercontent.com/dvk2017/NY-galary/refs/heads/main/src/img/arcad/img-1_400.jpg',
+    original:
+      'https://raw.githubusercontent.com/dvk2017/NY-galary/refs/heads/main/src/img/arcad/img-1.jpg',
     description: 'Цифри в моделі генератора біля?',
     ansId: 'ans-01',
   },
   {
-    preview: '../img/arcad/img-2_400.jpg',
-    original: '../img/arcad/img-2.jpg',
+    preview:
+      'https://raw.githubusercontent.com/dvk2017/NY-galary/refs/heads/main/src/img/arcad/img-2_400.jpg',
+    original:
+      'https://raw.githubusercontent.com/dvk2017/NY-galary/refs/heads/main/src/img/arcad/img-2.jpg',
     description: 'Кількість сходинок біля?',
     ansId: 'ans-02',
   },
   {
-    preview: '../img/arcad/img-3_400.jpg',
-    original: '../img/arcad/img-3.jpg',
+    preview:
+      'https://raw.githubusercontent.com/dvk2017/NY-galary/refs/heads/main/src/img/arcad/img-3_400.jpg',
+    original:
+      'https://raw.githubusercontent.com/dvk2017/NY-galary/refs/heads/main/src/img/arcad/img-3.jpg',
     description:
       'З цього об’єкту дуже красивий вид. На скількох опорах тримається дах?',
     ansId: 'ans-03',
   },
   {
-    preview: '../img/arcad/img-4_400.jpg',
-    original: '../img/arcad/img-4.jpg',
+    preview:
+      'https://raw.githubusercontent.com/dvk2017/NY-galary/refs/heads/main/src/img/arcad/img-4_400.jpg',
+    original:
+      'https://raw.githubusercontent.com/dvk2017/NY-galary/refs/heads/main/src/img/arcad/img-4.jpg',
     description: 'кількість маленьких віконець біля',
     ansId: 'ans-04',
   },
   {
-    preview: '../img/arcad/img-5_400.jpg',
-    original: '../img/arcad/img-5.jpg',
+    preview:
+      'https://raw.githubusercontent.com/dvk2017/NY-galary/refs/heads/main/src/img/arcad/img-5_400.jpg',
+    original:
+      'https://raw.githubusercontent.com/dvk2017/NY-galary/refs/heads/main/src/img/arcad/img-5.jpg',
     description: 'Скільки блакитних шарів',
     ansId: 'ans-05',
   },
