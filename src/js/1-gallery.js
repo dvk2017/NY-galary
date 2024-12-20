@@ -14,7 +14,7 @@ const marcup = images.reduce(
       alt="${description}"
     />
   </a>
-    <label for="${ansId}"></label>${description}:</label>
+    <label for="${ansId}">${description}:</label>
   <input type="number" id="${ansId}" name="quantity">
  </li>
         `);

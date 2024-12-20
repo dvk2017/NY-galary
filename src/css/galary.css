@@ -44,8 +44,9 @@ img {
 
 .gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* grid-template-rows: 1fr 1fr 1fr; */
   gap: 24px;
   background-color: white;
   padding: 24px;
@@ -85,6 +86,43 @@ img {
   text-align: center;
 }
 
+.feedback-form label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.feedback-form input {
+  display: block;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding: 0 16px;
+  margin: 8px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.feedback-form input:hover {
+  border-color: #000;
+  outline: 0px;
+}
+
+.feedback-form input:active,
+.feedback-form input:focus,
+.feedback-form input:focus-visible {
+  border-color: #2e2f42;
+  outline: 0px;
+}
+
 button {
   display: block;
   border-radius: 8px;
@@ -96,7 +134,7 @@ button {
   margin-top: 16px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
