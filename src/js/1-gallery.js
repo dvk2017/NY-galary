@@ -2,8 +2,9 @@ import images from './images.js';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-const marcup = images.reduce((html, { preview, original, description }) => {
-  return (html += `
+const marcup = images.reduce(
+  (html, { preview, original, description, ansId }) => {
+    return (html += `
         <li class="gallery-item">
   <a class="gallery-link" href="${original}">
     <img
@@ -13,18 +14,67 @@ const marcup = images.reduce((html, { preview, original, description }) => {
       alt="${description}"
     />
   </a>
-</li>
+    <label for="${ansId}"></label>${description}:</label>
+  <input type="number" id="${ansId}" name="quantity">
+ </li>
         `);
-}, '');
+  },
+  ''
+);
 
-const marcupGallery = document.querySelector('.gallery');
-marcupGallery.insertAdjacentHTML('beforeend', marcup);
+const gallery = document.querySelector('.gallery');
+gallery.insertAdjacentHTML('beforeend', marcup);
 
 new SimpleLightbox('.gallery .gallery-link', {
   captions: true,
-  // captionSelector: 'self',
   captionType: 'html',
   captionsData: 'alt',
   captionDelay: 250,
   /* options */
 });
+
+let answers = {};
+
+const form = document.querySelector('.feedback-form');
+
+if (localStorage.getItem('answers-state')) {
+  answers = JSON.parse(localStorage.getItem('answers-state'));
+}
+
+console.log(answers);
+
+for (const [key, value] of Object.entries(answers)) {
+  console.log(`${key}: ${value}`);
+  document.querySelector(`#${key}`).value = value;
+}
+
+console.log(answers);
+
+form.addEventListener('input', onInput);
+form.addEventListener('submit', onSubmit);
+
+function onInput(evt) {
+  console.log(evt.target.id);
+  answers[evt.target.id] = evt.target.value.trim();
+  console.log(answers);
+  localStorage.setItem('answers-state', JSON.stringify(answers));
+}
+
+function onSubmit(evt) {
+  evt.preventDefault();
+
+  if (Object.keys(answers).length !== 9) {
+    alert('Fill please all fields');
+    return;
+  }
+
+  let totalRes = 0;
+  Object.values(answers).forEach(ans => {
+    totalRes += Number(ans);
+  });
+
+  totalResVolue.textContent = totalRes;
+}
+
+const totalResVolue = document.querySelector('#total-rez');
+// totalResText.insertAdjacentHTML('beforeend', ` ${totalRes}`);

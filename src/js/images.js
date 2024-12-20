@@ -2,27 +2,33 @@ export default [
   {
     preview: '../img/arcad/img-1_400.jpg',
     original: '../img/arcad/img-1.jpg',
-    description: '<input type="text" placeholder="Enter text here">',
+    description: 'Цифри в моделі генератора біля?',
+    ansId: 'ans-01',
   },
   {
     preview: '../img/arcad/img-2_400.jpg',
     original: '../img/arcad/img-2.jpg',
-    description: 'Container Haulage Freight',
+    description: 'Кількість сходинок біля?',
+    ansId: 'ans-02',
   },
   {
     preview: '../img/arcad/img-3_400.jpg',
     original: '../img/arcad/img-3.jpg',
-    description: 'Aerial Beach View',
+    description:
+      'З цього об’єкту дуже красивий вид. На скількох опорах тримається дах?',
+    ansId: 'ans-03',
   },
   {
     preview: '../img/arcad/img-4_400.jpg',
     original: '../img/arcad/img-4.jpg',
-    description: 'Flower Blooms',
+    description: 'кількість маленьких віконець біля',
+    ansId: 'ans-04',
   },
   {
     preview: '../img/arcad/img-5_400.jpg',
     original: '../img/arcad/img-5.jpg',
-    description: 'Alpine Mountains',
+    description: 'Скільки блакитних шарів',
+    ansId: 'ans-05',
   },
   {
     preview:
@@ -30,6 +36,7 @@ export default [
     original:
       'https://cdn.pixabay.com/photo/2019/05/16/23/04/landscape-4208571_1280.jpg',
     description: 'Mountain Lake Sailing',
+    ansId: 'ans-06',
   },
   {
     preview:
@@ -37,6 +44,7 @@ export default [
     original:
       'https://cdn.pixabay.com/photo/2019/05/17/09/27/the-alps-4209272_1280.jpg',
     description: 'Alpine Spring Meadows',
+    ansId: 'ans-07',
   },
   {
     preview:
@@ -44,6 +52,7 @@ export default [
     original:
       'https://cdn.pixabay.com/photo/2019/05/16/21/10/landscape-4208255_1280.jpg',
     description: 'Nature Landscape',
+    ansId: 'ans-08',
   },
   {
     preview:
@@ -51,5 +60,6 @@ export default [
     original:
       'https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg',
     description: 'Lighthouse Coast Sea',
+    ansId: 'ans-09',
   },
 ];
