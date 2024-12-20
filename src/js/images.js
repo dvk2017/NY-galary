@@ -1,42 +1,32 @@
 export default [
   {
-    preview:
-      'https://raw.githubusercontent.com/dvk2017/NY-galary/refs/heads/main/src/img/arcad/img-1_400.jpg',
-    original:
-      'https://raw.githubusercontent.com/dvk2017/NY-galary/refs/heads/main/src/img/arcad/img-1.jpg',
+    preview: 'https://i.ibb.co/n0NDPdW/img-1-400.jpg',
+    original: 'https://i.ibb.co/7Q9zHgb/img-1.jpg',
     description: 'Цифри в моделі генератора біля?',
     ansId: 'ans-01',
   },
   {
-    preview:
-      'https://raw.githubusercontent.com/dvk2017/NY-galary/refs/heads/main/src/img/arcad/img-2_400.jpg',
-    original:
-      'https://raw.githubusercontent.com/dvk2017/NY-galary/refs/heads/main/src/img/arcad/img-2.jpg',
+    preview: 'https://i.ibb.co/pjbvCv0/img-2-400.jpg',
+    original: 'https://i.ibb.co/S5bfh7v/img-2.jpg',
     description: 'Кількість сходинок біля?',
     ansId: 'ans-02',
   },
   {
-    preview:
-      'https://raw.githubusercontent.com/dvk2017/NY-galary/refs/heads/main/src/img/arcad/img-3_400.jpg',
-    original:
-      'https://raw.githubusercontent.com/dvk2017/NY-galary/refs/heads/main/src/img/arcad/img-3.jpg',
+    preview: 'https://i.ibb.co/vstPzTM/img-3-400.jpg',
+    original: 'https://i.ibb.co/SV9c53Z/img-3.jpg',
     description:
       'З цього об’єкту дуже красивий вид. На скількох опорах тримається дах?',
     ansId: 'ans-03',
   },
   {
-    preview:
-      'https://raw.githubusercontent.com/dvk2017/NY-galary/refs/heads/main/src/img/arcad/img-4_400.jpg',
-    original:
-      'https://raw.githubusercontent.com/dvk2017/NY-galary/refs/heads/main/src/img/arcad/img-4.jpg',
+    preview: 'https://i.ibb.co/JRCTx7X/img-4-400.jpg',
+    original: 'https://i.ibb.co/ZBKzvXX/img-4.jpg',
     description: 'кількість маленьких віконець біля',
     ansId: 'ans-04',
   },
   {
-    preview:
-      'https://raw.githubusercontent.com/dvk2017/NY-galary/refs/heads/main/src/img/arcad/img-5_400.jpg',
-    original:
-      'https://raw.githubusercontent.com/dvk2017/NY-galary/refs/heads/main/src/img/arcad/img-5.jpg',
+    preview: 'https://i.ibb.co/G959HYz/img-5-400.jpg',
+    original: 'https://i.ibb.co/f4km8g1/img-5.jpg',
     description: 'Скільки блакитних шарів',
     ansId: 'ans-05',
   },
