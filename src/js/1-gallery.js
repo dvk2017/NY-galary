@@ -41,22 +41,15 @@ if (localStorage.getItem('answers-state')) {
   answers = JSON.parse(localStorage.getItem('answers-state'));
 }
 
-console.log(answers);
-
 for (const [key, value] of Object.entries(answers)) {
-  console.log(`${key}: ${value}`);
   document.querySelector(`#${key}`).value = value;
 }
-
-console.log(answers);
 
 form.addEventListener('input', onInput);
 form.addEventListener('submit', onSubmit);
 
 function onInput(evt) {
-  console.log(evt.target.id);
   answers[evt.target.id] = evt.target.value.trim();
-  console.log(answers);
   localStorage.setItem('answers-state', JSON.stringify(answers));
 }
 
