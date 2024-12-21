@@ -99,7 +99,7 @@ img {
   display: block;
   border: 1px solid #808080;
   border-radius: 4px;
-  width: 360px;
+  /* width: 360px; */
   height: 40px;
   padding: 0 16px;
   margin: 8px 0;
@@ -123,13 +123,29 @@ img {
   outline: 0px;
 }
 
+.answer-check {
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+
+.answer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.answer-check .material-icons {
+  padding: 0 36px;
+  font-size: 36px;
+}
+
 button {
   display: block;
   border-radius: 8px;
   border: none;
   padding: 8px 16px;
   width: fit-content;
-  height: 40px;
+  height: fit-content;
   background-color: #4e75ff;
   margin-top: 16px;
   font-family: 'Montserrat', sans-serif;

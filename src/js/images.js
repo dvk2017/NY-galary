@@ -4,12 +4,14 @@ export default [
     original: 'https://i.ibb.co/7Q9zHgb/img-1.jpg',
     description: 'Цифри в моделі генератора біля?',
     ansId: 'ans-01',
+    trueAns: '165',
   },
   {
     preview: 'https://i.ibb.co/pjbvCv0/img-2-400.jpg',
     original: 'https://i.ibb.co/S5bfh7v/img-2.jpg',
     description: 'Кількість сходинок біля?',
     ansId: 'ans-02',
+    trueAns: '5',
   },
   {
     preview: 'https://i.ibb.co/vstPzTM/img-3-400.jpg',

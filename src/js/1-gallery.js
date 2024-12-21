@@ -15,7 +15,10 @@ const marcup = images.reduce(
     />
   </a>
     <label for="${ansId}">${description}:</label>
-  <input type="number" id="${ansId}" name="quantity">
+  <div class="answer-check">
+    <input type="number" id="${ansId}" name="quantity">
+    <div class="answer-icon"></div>
+  </div>
  </li>
         `);
   },
@@ -67,7 +70,22 @@ function onSubmit(evt) {
   });
 
   totalResVolue.textContent = totalRes;
+
+  checkAnswers();
 }
 
 const totalResVolue = document.querySelector('#total-rez');
 // totalResText.insertAdjacentHTML('beforeend', ` ${totalRes}`);
+
+function checkAnswers() {
+  for (const [key, value] of Object.entries(answers)) {
+    const answerIconTag = document.querySelector(`#${key} + .answer-icon`);
+
+    const answerIcon =
+      images.find(el => el.ansId === key).trueAns === value
+        ? '<div class="material-icons" style="color: green">check</div>'
+        : '<div class="material-icons" style="color: red">close</div>';
+
+    answerIconTag.innerHTML = answerIcon;
+  }
+}
