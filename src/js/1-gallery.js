@@ -59,10 +59,10 @@ function onInput(evt) {
 function onSubmit(evt) {
   evt.preventDefault();
 
-  if (Object.keys(answers).length !== 9) {
-    alert('Fill please all fields');
-    return;
-  }
+  // if (Object.keys(answers).length !== 12) {
+  //   alert('Fill please all fields');
+  //   return;
+  // }
 
   let totalRes = 0;
   Object.values(answers).forEach(ans => {
