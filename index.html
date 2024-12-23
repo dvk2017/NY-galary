@@ -3,10 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/NY-galary/favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NY2025</title>
-    <script type="module" crossorigin src="/NY-galary/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-    <link rel="stylesheet" crossorigin href="/NY-galary/assets/index-BocjuOXK.css">
+    <script type="module" crossorigin src="/NY-galary/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/NY-galary/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="stylesheet" crossorigin href="/NY-galary/assets/index-CtfQyxbP.css">
   </head>
   <body>
     <header class="header">
@@ -19,7 +24,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./2-form.html">Form</a>
+              <a class="nav-link bs" href="./2-brainstorm.html">Брейн-шторм</a>
             </li>
           </ul>
         </nav>
@@ -39,6 +44,50 @@
         </div>
       </section>
     </main>
+
+    <div class="backdrop">
+      <!-- is-open -->
+      <div class="modal">
+        <p class="modal-header">
+          Якщо гуляючи Аркадією ви все знайшли і правильно порахували, можете
+          перейти до фінального брейн-шторму
+        </p>
+        <form class="modal-form">
+          <div class="label-input-wrap">
+            <label class="modal-label" for="password-field">таємний код</label>
+            <div class="password-wrapper">
+              <input
+                type="password"
+                name="password"
+                id="password-field"
+                class="form-control"
+                autocomplete="off"
+                readonly
+                onclick="this.removeAttribute('readonly');"
+                inputmode="numeric"
+              />
+              <div class="toggle-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="eye-icon"
+                >
+                  <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" />
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 010-1.113zM17.25 12a5.25 5.25 0 11-10.5 0 5.25 5.25 0 0110.5 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn" type="submit">Вперед!</button>
+        </form>
+      </div>
+    </div>
 
   </body>
 </html>
