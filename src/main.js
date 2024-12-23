@@ -60,7 +60,7 @@ function onSubmitPsw(evt) {
   //   console.dir(form.elements.password.value);
 
   if (passwordField.value === '71') {
-    window.open('./2-brainstorm.html', '_blank');
+    window.location.replace('./2-brainstorm.html');
   } else {
     alert('УПС, десь закралася прикра помилка :(');
     document.querySelector('.backdrop').classList.remove('is-open');
