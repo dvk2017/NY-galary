@@ -59,7 +59,7 @@ function onSubmitPsw(evt) {
   //   console.log(evt.target.elements.password.value);
   //   console.dir(form.elements.password.value);
 
-  if (passwordField.value === '71') {
+  if (passwordField.value === '88898916') {
     window.location.replace('./2-brainstorm.html');
   } else {
     alert('УПС, десь закралася прикра помилка :(');

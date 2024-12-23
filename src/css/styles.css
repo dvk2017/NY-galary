@@ -27,8 +27,13 @@
 }
 
 .big {
-  font-size: 80px;
+  font-size: 8vw;
   font-weight: 900;
+}
+
+.hero .container img {
+  width: 90%;
+  margin: auto;
 }
 
 /* ========== MODAL WINDOW ============= */
