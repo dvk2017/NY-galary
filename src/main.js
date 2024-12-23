@@ -63,5 +63,6 @@ function onSubmitPsw(evt) {
     window.open('./2-brainstorm.html', '_blank');
   } else {
     alert('УПС, десь закралася прикра помилка :(');
+    document.querySelector('.backdrop').classList.remove('is-open');
   }
 }
