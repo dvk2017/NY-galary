@@ -70,6 +70,7 @@ function onSubmit(evt) {
   });
 
   totalResVolue.textContent = totalRes;
+  localStorage.setItem('totalRes', totalRes);
 
   checkAnswers();
 }
