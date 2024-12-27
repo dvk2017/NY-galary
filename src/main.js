@@ -1,3 +1,53 @@
+// =============  TIMER  =====================
+
+function convertMs(ms) {
+  // Number of milliseconds per unit of time
+  const second = 1000;
+  const minute = second * 60;
+  const hour = minute * 60;
+  const day = hour * 24;
+
+  // Remaining days
+  const days = Math.floor(ms / day);
+  // Remaining hours
+  const hours = Math.floor((ms % day) / hour);
+  // Remaining minutes
+  const minutes = Math.floor(((ms % day) % hour) / minute);
+  // Remaining seconds
+  const seconds = Math.floor((((ms % day) % hour) % minute) / second);
+
+  return { days, hours, minutes, seconds };
+}
+
+const daysFild = document.querySelector('.field span[data-days]');
+const hoursFild = document.querySelector('.field span[data-hours]');
+const minutesFild = document.querySelector('.field span[data-minutes]');
+const secondsFild = document.querySelector('.field span[data-seconds]');
+
+function pad(num) {
+  return String(num).padStart(2, '0');
+}
+
+function countdown(setDate) {
+  const intervalID = setInterval(() => {
+    const timeLeft = setDate - Date.now();
+    const { days, hours, minutes, seconds } = convertMs(timeLeft);
+    daysFild.textContent = pad(days);
+    hoursFild.textContent = pad(hours);
+    minutesFild.textContent = pad(minutes);
+    secondsFild.textContent = pad(seconds);
+
+    if (timeLeft < 1000) {
+      clearInterval(intervalID);
+    }
+  }, 1000);
+}
+
+const newYear = new Date('2025-01-01T00:00:00');
+
+countdown(newYear);
+
+// =============  password-field   =====================
 const eyeIcons = {
   open: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="eye-icon"><path d="M12 15a3 3 0 100-6 3 3 0 000 6z" /><path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 010-1.113zM17.25 12a5.25 5.25 0 11-10.5 0 5.25 5.25 0 0110.5 0z" clip-rule="evenodd" /></svg>',
   closed:

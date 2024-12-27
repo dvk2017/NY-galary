@@ -36,6 +36,30 @@
   margin: auto;
 }
 
+/* ========== TIMER ============= */
+
+.timer {
+  color: rgb(16, 179, 19);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.field {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+}
+
+.value {
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+}
+
+.label {
+}
+
 /* ========== MODAL WINDOW ============= */
 
 .backdrop {
