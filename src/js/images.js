@@ -3,7 +3,7 @@ export default [
     preview: 'https://i.ibb.co/NTV2hwT/img-00.jpg',
     original: 'https://i.ibb.co/NTV2hwT/img-00.jpg',
     description:
-      'Зберіть кубик рубіка, щоб дізнатися, де потрібно порахувати всі ліхтарі',
+      'Зберіть кубик Рубіка, щоб дізнатися, де потрібно порахувати всі ліхтарі',
     ansId: 'ans-00',
     trueAns: '26',
   },

@@ -2,7 +2,6 @@
 const sound = new Audio(
   'https://fs.meloua.com/dl/1140f85a3aefa6c7466b0a957ac76301/shpilyasti-kobzari-jingle-bells-(meloua.com)/1004918.mp3'
 );
-sound.play();
 
 // =============  TIMER  =====================
 
@@ -122,3 +121,5 @@ function onSubmitPsw(evt) {
     document.querySelector('.backdrop').classList.remove('is-open');
   }
 }
+
+sound.play();
