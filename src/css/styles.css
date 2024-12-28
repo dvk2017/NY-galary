@@ -178,3 +178,20 @@
   width: 20px;
   height: 20px;
 }
+
+/* ========== START MODAL WINDOW ============= */
+
+.start-modal {
+  width: 90%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-header {
+  display: block;
+  font-size: 8vw;
+  font-weight: 900;
+  color: red;
+}

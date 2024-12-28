@@ -122,4 +122,39 @@ function onSubmitPsw(evt) {
   }
 }
 
-sound.play();
+/* ========== START MODAL WINDOW ============= */
+const startModal = document.getElementById('start');
+
+// const startPromise = new Promise((resolve, reject) => {
+//   try {
+//     sound.play();
+//   } catch (error) {
+//     reject(error);
+//   }
+//   resolve();
+// });
+
+// startPromise.catch(reason => {
+//   startModal.classList.add('is-open');
+// });
+
+// =========== var 2
+// try {
+//   sound.play();
+// } catch (error) {
+//   console.log('rrr');
+
+//   startModal.classList.add('is-open');
+// }
+
+if (localStorage.getItem('start')) {
+  sound.play();
+} else {
+  startModal.classList.add('is-open');
+}
+
+startModal.addEventListener('click', evt => {
+  startModal.classList.remove('is-open');
+  localStorage.setItem('start', true);
+  sound.play();
+});
