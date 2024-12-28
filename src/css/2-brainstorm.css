@@ -6,19 +6,19 @@
   text-align: justify;
 }
 
-.answer-check {
+.feedback-form .answer-check {
   display: flex;
   align-items: center;
 }
 
-.answer-check label {
+.feedback-form .answer-check label {
   width: 170px;
 }
-.answer-check input {
+.feedback-form .answer-check input {
   width: 105px;
 }
 
-.answer-check .material-icons {
+.feedback-form .answer-check .material-icons {
   padding: 0 10px;
 }
 
