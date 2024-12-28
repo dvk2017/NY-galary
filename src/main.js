@@ -1,6 +1,13 @@
+//audio file
+const sound = new Audio(
+  'https://fs.meloua.com/dl/1140f85a3aefa6c7466b0a957ac76301/shpilyasti-kobzari-jingle-bells-(meloua.com)/1004918.mp3'
+  // 'https://raw.githubusercontent.com/Yousuke777/sound/main/kansei.mp3'
+);
+sound.play();
+
 // =============  TIMER  =====================
 
-function convertMs(ms) {
+(function convertMs(ms) {
   // Number of milliseconds per unit of time
   const second = 1000;
   const minute = second * 60;
@@ -17,7 +24,7 @@ function convertMs(ms) {
   const seconds = Math.floor((((ms % day) % hour) % minute) / second);
 
   return { days, hours, minutes, seconds };
-}
+})();
 
 const daysFild = document.querySelector('.field span[data-days]');
 const hoursFild = document.querySelector('.field span[data-hours]');
