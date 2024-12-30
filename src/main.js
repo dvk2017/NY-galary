@@ -1,3 +1,5 @@
+import hash from 'hash-it';
+
 //audio file
 const sound = new Audio(
   'https://fs.meloua.com/dl/1140f85a3aefa6c7466b0a957ac76301/shpilyasti-kobzari-jingle-bells-(meloua.com)/1004918.mp3'
@@ -114,7 +116,7 @@ function onSubmitPsw(evt) {
   //   console.log(evt.target.elements.password.value);
   //   console.dir(form.elements.password.value);
 
-  if (passwordField.value === '88898916') {
+  if (hash(passwordField.value) === 582581681554) {
     window.location.replace('./2-brainstorm.html');
   } else {
     alert('УПС, десь закралася прикра помилка :(');
@@ -149,12 +151,12 @@ const startModal = document.getElementById('start');
 
 if (localStorage.getItem('start')) {
   sound.play();
+  localStorage.removeItem('start');
 } else {
   startModal.classList.add('is-open');
 }
 
 startModal.addEventListener('click', evt => {
   startModal.classList.remove('is-open');
-  localStorage.setItem('start', true);
   sound.play();
 });

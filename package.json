@@ -18,6 +18,7 @@
   "author": "dvk <dmitriykolesnyk@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "hash-it": "^6.0.0",
     "lodash.throttle": "^4.1.1",
     "simplelightbox": "^2.14.3",
     "vite-plugin-full-reload": "^1.2.0",

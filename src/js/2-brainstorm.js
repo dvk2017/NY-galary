@@ -1,3 +1,5 @@
+import hash from 'hash-it';
+
 //audio file
 const sound = new Audio(
   'https://raw.githubusercontent.com/Yousuke777/sound/main/kansei.mp3'
@@ -30,10 +32,14 @@ function checkAnswers() {
     const answerIconTag = document.querySelector(`#${key} + .answer-icon`);
 
     const answerIcon =
-      document.getElementById(key).dataset.trueans === value
+      document.getElementById(key).dataset.trueans === hash(value).toString()
         ? '<div class="material-icons" style="color: green">check</div>'
         : '<div class="material-icons" style="color: red">close</div>';
 
     answerIconTag.innerHTML = answerIcon;
   }
 }
+
+// =========== prevent open start modal =============
+const back = document.querySelector('.back-link');
+back.addEventListener('click', () => localStorage.setItem('start', true));
