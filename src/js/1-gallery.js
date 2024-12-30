@@ -3,30 +3,6 @@ import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import hash from 'hash-it';
 
-console.log(hash('26'));
-console.log(hash('165'));
-console.log(hash('5'));
-console.log(hash('13'));
-console.log(hash('3'));
-console.log('');
-console.log(hash('11'));
-console.log(hash('9477'));
-console.log(hash('0268'));
-console.log(hash('29'));
-console.log(hash('88888888'));
-console.log(hash('7'));
-console.log('');
-console.log(hash('9'));
-console.log(hash('3'));
-console.log(hash('12'));
-console.log(hash('1'));
-console.log(hash('88898917'));
-
-// 24058714829
-// 1-gallery.js:20 24057362695
-// 1-gallery.js:21 793897889367
-// 1-gallery.js:22 24057633221
-
 const marcup = images.reduce(
   (html, { preview, original, description, ansId }) => {
     return (html += `
