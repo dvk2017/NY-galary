@@ -100,8 +100,8 @@ export default [
     trueAns: '793897889367',
   },
   {
-    preview: 'https://i.ibb.co/6rs3BBF/img-15-400.jpg',
-    original: 'https://i.ibb.co/C7ycwL1/img-15.jpg',
+    preview: 'https://i.ibb.co/HPQkSXc/img-17-400.jpg',
+    original: 'https://i.ibb.co/KN25fjp/img-17.jpg',
     description: '?',
     ansId: 'ans-15',
     trueAns: '24057633221',
