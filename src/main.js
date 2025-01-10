@@ -2,7 +2,8 @@ import hash from 'hash-it';
 
 //audio file
 const sound = new Audio(
-  'https://fs.meloua.com/dl/1140f85a3aefa6c7466b0a957ac76301/shpilyasti-kobzari-jingle-bells-(meloua.com)/1004918.mp3'
+  'https://fs.meloua.com/pl/fe6bd316ab3c41eee11ea5c790c03aa2/ot-vinta-ot-vinta-novorichniy-dzin-jingle-bells-(meloua.com)/1004920.mp3'
+  // 'https://fs.meloua.com/dl/1140f85a3aefa6c7466b0a957ac76301/shpilyasti-kobzari-jingle-bells-(meloua.com)/1004918.mp3'
 );
 
 // =============  TIMER  =====================
@@ -52,7 +53,9 @@ function countdown(setDate) {
 
 const newYear = new Date('2025-01-01T00:00:00');
 
-countdown(newYear);
+const nextNewYear = newYear.setFullYear(new Date().getFullYear() + 1);
+
+countdown(nextNewYear);
 
 // =============  password-field   =====================
 const eyeIcons = {
