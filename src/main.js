@@ -2,8 +2,7 @@ import hash from 'hash-it';
 
 //audio file
 const sound = new Audio(
-  'https://fs.meloua.com/pl/fe6bd316ab3c41eee11ea5c790c03aa2/ot-vinta-ot-vinta-novorichniy-dzin-jingle-bells-(meloua.com)/1004920.mp3'
-  // 'https://fs.meloua.com/dl/1140f85a3aefa6c7466b0a957ac76301/shpilyasti-kobzari-jingle-bells-(meloua.com)/1004918.mp3'
+  'https://cdn.pixabay.com/audio/2023/10/04/audio_2905d35355.mp3'
 );
 
 // =============  TIMER  =====================
